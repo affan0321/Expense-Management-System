@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="h1">Expense Management System</h1>
+    </div>
+    
+    <div class="container">
+        <div class="div1">
+            <label class="id"  for="id">Enter ID:
+                <input  id="id" type="number">
+            </label>
+            <br><br>
+            <label class="item" for="item">Enter the Item:
+                <input id="item" type="text">
+            </label>
+            <br><br>
+            <label class="amount" for="amount">Enter Amount:
+                <input id="amount" type="number">
+            </label>
+            <br><br>
+            <button class="btn1" onclick="addExpense()">Add Expense</button>
+            <button class="btn2" onclick="calculateTotal()">calculateTotal</button>
+        </div>
+    </div>
+    <div class="div2">
+    <ul id="list-container"></ul>
+</div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
